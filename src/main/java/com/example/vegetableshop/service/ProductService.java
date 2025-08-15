@@ -1,6 +1,6 @@
 package com.example.vegetableshop.service;
 
-import com.example.vegetableshop.model.Product;
+import com.example.vegetableshop.entity.Product;
 import com.example.vegetableshop.repository.ProductRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;

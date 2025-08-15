@@ -1,16 +1,14 @@
-package com.example.vegetableshop.model;
+package com.example.vegetableshop.entity;
 
 
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
@@ -19,9 +17,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Double pricePerKg;
+    private Double price;
     private String image;
     private int stock;
-
-
 }
